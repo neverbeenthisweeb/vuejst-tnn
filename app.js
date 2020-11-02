@@ -2,15 +2,24 @@ new Vue({
     // refer to element based on its id
     el:'#vue-app',
     data: {
-        name:'',
-        age:''
+        a:0,
+        b:0,
+        age:25
     },
     methods: {
-        logName:function(){
-            console.log("you entered your name")
+        hello:function(){
+            console.log("f:hello")
+            return "Hi!";
+        }
+    },
+    computed: {
+        addToA:function(){
+            console.log("f:addToA")
+            return this.a + this.age;
         },
-        logAge:function(){
-            console.log("you entered your age")
+        addToB:function(){
+            console.log("f:addToB")
+            return this.b + this.age;
         }
     }
 });
