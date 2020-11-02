@@ -2,6 +2,8 @@ new Vue({
     // refer to element based on its id
     el:'#vue-app',
     data: {
+        name:'',
+        age:''
     },
     methods: {
         logName:function(){
